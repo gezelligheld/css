@@ -1,3 +1,18 @@
+# html
+
+- Doctype：HTML5 的文档声明，通过它可以告诉浏览器，使用哪一个 HTML 版本标准解析文档
+
+- 语义化标签
+
+- html 解析顺序
+
+  - 自上而下解析 html
+  - 遇到 script 时停止解析 html，请求资源并执行 js，然后继续解析 html
+  - 遇到 async script 时，并行请求资源，获取后如果 html 还没有解析完成就停止解析并执行 js，执行时机不固定
+  - 遇到 defer script 时，并行请求资源，等待 html 解析完成后再执行 js
+  - 等到 HTML 文档完全加载和解析且 defer script 执行完毕后，触发 DOMContentLoaded 事件
+  - 等到页面所有内容都加载完毕后，触发 load 事件
+
 # css
 
 ##### 水平垂直居中的方式
@@ -148,4 +163,9 @@
 
 根据各种设备特征和参数的值或者是否存在进行响应式布局
 
-##### css in js
+##### 项目中的 css
+
+- 预处理语言 less 和 sass
+- 原子化 css
+- css modules
+- css in js
