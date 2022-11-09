@@ -157,7 +157,24 @@
   - align-self：允许单个项目有与其他项目不一样的交叉轴对齐方式
   - justify-self：弹性盒中无效，主轴上将项目作为一个组处理，无法单独设置某一个
 
-##### 网格布局（网格轨道、网格单元、网格线）
+##### 网格布局
+
+- 容器属性
+
+  - grid-template-columns & grid-template-rows：设置列宽/行高
+  - grid-column-gap & grid-row-gap：设置列间距/行间距
+  - justify-content & align-content：整个网格内容区域水平/垂直方向的对齐方式
+  - justify-items & align-items：单元格内容的水平/垂直方向的对齐方式
+  - grid-template-areas：网格区域命名
+  - grid-auto-flow：设置自动布局算法，即元素如何排列
+  - grid-auto-columns & grid-auto-rows：设置隐式网格的列宽/行高
+
+- 项目属性
+
+  - grid-column-start & grid-column-end：左/右边框所在的垂直网格线
+  - grid-row-start & grid-row-end：上/下边框所在的水平网格线
+  - grid-area：上述属性简写形式，或指定某个网格区域名
+  - align-self & justify-self：单元格内容的水平/垂直方向的对齐方式，只能单个设置
 
 ##### 媒体查询
 
